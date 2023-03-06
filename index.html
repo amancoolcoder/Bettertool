@@ -217,7 +217,9 @@ body{
 }
      </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/@admob-plus/admob-plus@latest/admob.min.js"></script> 
+
+    </head>
 <body>
     <center><a href="Image edit.html" style="text-decoration: none;color: blue;margin: 10px;">Image Editor</a>
 
@@ -265,7 +267,19 @@ body{
     <div class="won-text"></div>
     <div class="btn"><button>Replay</button></div>
   </div>
-
+<br>
+      <br>
+      <br>
+      <div id="banner"></div> 
+ 
+<script> 
+  admob.banner.config({ 
+    id: 'ca-app-pub-3940256099942544/6300978111', 
+    isTesting: true, 
+    autoShow: true 
+  }) 
+  admob.banner.prepare() 
+</script> 
   <script>
   const selectBox = document.querySelector(".select-box"),
 selectBtnX = selectBox.querySelector(".options .playerX"),
